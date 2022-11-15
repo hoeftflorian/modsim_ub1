@@ -189,7 +189,16 @@ int main(int argc, char *argv[])
  for (i=0;i<N+1;i++){
   a[i] = D[i][i]; 
  }
-  // Geben Sie das Polynom aus:
+
+ printf("\n\n");
+    // Geben Sie das Polynom aus:
+    printf("p(x)=");
+    for(int ff = 0; ff < N; ff++) { 
+        printf("+%.5lf",a[ff]);
+        for(int kk = 0; kk < ff; kk++){
+            printf("*(x-%.5lf)",x [kk]);
+        }
+    }
 
   int useplotter = 1;
 
